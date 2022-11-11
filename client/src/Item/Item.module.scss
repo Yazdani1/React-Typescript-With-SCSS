@@ -1,0 +1,51 @@
+@import "../styles//Variables.scss";
+@import "../styles//Mixin.scss";
+
+.ItemContainer {
+  background-color: $listContainer;
+
+  h3 {
+    @include itemCenter();
+  }
+}
+
+.itemList {
+  height: 850px;
+  width: 100%;
+  display: flex;
+
+  .ItemCard {
+    background-color: $continerbackground;
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+    margin: 50px;
+    h6 {
+      padding: 10px;
+      color: $title;
+    }
+    p {
+      padding: 10px;
+      color: $title;
+    }
+
+    .ItemButtonDesign {
+      @include buttonStyle($secondButton, $fontButton1);
+
+      &:hover {
+        background-color: rgba(40, 22, 241, 0.852);
+        cursor: pointer;
+      }
+    }
+
+    .ItemButtonTwo {
+      @include buttonStyle($buttoncolor, $fontButton2);
+
+      &:hover {
+        background-color: rgba(22, 241, 69, 0.852);
+        cursor: pointer;
+        color: black;
+      }
+    }
+  }
+}

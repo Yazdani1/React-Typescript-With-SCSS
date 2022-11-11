@@ -1,0 +1,38 @@
+
+// button style
+@mixin buttonStyle ($button_background_color,$fontsize) {
+    margin: 10px;
+    background-color: $button_background_color;
+    color: $title;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: 0 auto;
+    font-size: $fontsize;
+}
+
+// to put the tile in the center
+
+@mixin  itemCenter {
+    text-align: center;
+    color: rgb(253, 255, 255);
+    padding: 10px;
+}
+
+
+
+@mixin avatarDesign ($avatarBackColor){
+    height: 70px;
+    width: 70px;
+    background-color: $avatarBackColor;
+    border-radius: 90px;
+
+    h5{
+        text-align: center;
+        line-height: 70px;
+    }
+}
+

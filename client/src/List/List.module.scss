@@ -1,0 +1,43 @@
+@import "../styles/Variables.scss";
+@import "../styles/Mixin.scss";
+
+.listContainer {
+  height: 850px;
+  background-color: rgb(24, 177, 144);
+  width: 100%;
+  h1 {
+    @include itemCenter();
+  }
+}
+
+.listItemRow {
+  display: flex;
+  margin: 10px;
+
+  .listItemOne {
+    background-color: orangered;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    height: 400px;
+    margin: 10px;
+
+    .circleDesignOne {
+      @include avatarDesign(red);
+    }
+  }
+
+  .listItemTwo {
+    background-color: rgb(69, 91, 25);
+    @extend .listItemOne;
+
+    .circleDesignTwo {
+        @include avatarDesign(blue);
+
+    }
+  }
+
+  h4 {
+    @include itemCenter();
+  }
+}

@@ -1,0 +1,17 @@
+@import "../styles/Variables.scss";
+
+.navbar {
+height: 80px;
+background-color: $navbarbackground;
+}
+
+.navbarItem {
+    display: flex;
+    color: $title;
+    justify-content: center;
+
+    p{
+        padding: 15px;
+    }
+}
+
